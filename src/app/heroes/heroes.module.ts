@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { MaterialModule } from '../material/material.module';
@@ -12,7 +13,6 @@ import { SearchPageComponent } from './pages/search-page/search-page.component';
 import { CardComponent } from './components/card/card.component';
 
 import { HeroImagePipe } from './pipes/hero-image.pipe';
-
 
 @NgModule({
   declarations: [
@@ -28,6 +28,7 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     HeroesRoutingModule,
     MaterialModule
   ]
