@@ -1,1 +1,50 @@
-<p>hero-page works!</p>
+
+<ng-template #divLoading>
+    <mat-grid-list cols="1">
+        <mat-grid-tile>
+            <mat-spinner></mat-spinner>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
+
+<div *ngIf="hero; else divLoading" class="grid mt-2 p-2">
+    <mat-card 
+        class="col-12 sm:col-6"
+        id="heroe-card">
+
+        <mat-card-header>
+            <mat-card-title>{{ hero.alter_ego }}</mat-card-title>
+            <mat-card-subtitle>{{ hero.superhero }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <img [src]="hero | heroImage" [alt]="hero.superhero" mat-card-image>
+
+    </mat-card>
+
+    <mat-card 
+        class="col-12 sm:col-6"
+        id="heroe-title">
+        <mat-card-header>
+            <mat-card-title class="card-text">Information</mat-card-title>
+            <mat-card-subtitle class="card-text">{{ hero.superhero }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-card-content>
+            <mat-list class="heroe-info">
+                <mat-list-item>{{ hero.first_appearance }}</mat-list-item>
+                <mat-list-item>{{ hero.characters }}</mat-list-item>
+                <mat-list-item>{{ hero.publisher }}</mat-list-item>
+                <mat-list-item>{{ hero.alter_ego }}</mat-list-item>
+            </mat-list>
+
+            <button
+                mat-raised-button
+                color="warn"
+                (click)="goBack()"
+            >
+                Back
+            </button>
+        </mat-card-content>
+    </mat-card>
+</div>
