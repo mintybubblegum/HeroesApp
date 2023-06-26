@@ -5,7 +5,8 @@
         <mat-card-subtitle>{{ hero.alter_ego }}</mat-card-subtitle>
     </mat-card-header>
 
-    <!-- insert image -->
+<!--     <img [src]="'assets/heroes/' + hero.id + '.jpg'" [alt]="hero.superhero">-->    
+<img [src]=" hero | heroImage " [alt]="hero.superhero">
 
     <mat-card-content class="mt-2">
         <h4>{{ hero.publisher }}</h4>
