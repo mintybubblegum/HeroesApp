@@ -18,3 +18,4 @@
 7. Material Icon Theme
 8. Paste JSON as Code
 9. TypeScript Importer
+10. Better Comments
