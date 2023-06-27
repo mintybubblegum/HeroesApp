@@ -1,7 +1,6 @@
 <h1>
-    Edit / Add
+    {{ currentHero.id ? 'Edit' : 'Add' }}
     hero
-    <small>Wonderwoman</small>
 </h1>
 
 <mat-divider class="mb-2"></mat-divider>
@@ -78,12 +77,14 @@
 
                 <div class="flex justify-content-between">
                     <button
+                        *ngIf="currentHero.id"
                         mat-raised-button
                         color="warn"
                     >
                         <mat-icon>delete</mat-icon>
                         Delete
                     </button>
+                    <span></span>
 
                     <button
                         mat-raised-button

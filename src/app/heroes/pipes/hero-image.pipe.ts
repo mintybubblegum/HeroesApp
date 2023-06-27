@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Hero } from '../interfaces/hero.interface';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Pipe({
   name: 'heroImage'
@@ -16,5 +17,4 @@ export class HeroImagePipe implements PipeTransform {
 
     return `assets/heroes/${ hero.id }.jpg`
   }
-
 }
