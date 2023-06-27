@@ -4,8 +4,8 @@
 
 1. Clone project
 2. Run npm install  ```npm install```
-3. Run backend npm run backend ```npm run backend```
-4. Run the app ```npm start``` or ```ng serve -o```
+3. Run backend server ```npm run backend```
+4. Run the app with frontend server ```npm start``` or ```ng serve -o```
 
 ## Visual Studio Code Extensions Used
 
@@ -19,3 +19,5 @@
 8. Paste JSON as Code
 9. TypeScript Importer
 10. Better Comments
+11. Monokai Night Theme
+12. Material Icon Theme
