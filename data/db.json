@@ -8,15 +8,6 @@
   ],
   "heroes": [
     {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne",
-      "alt_img": null
-    },
-    {
       "id": "dc-superman",
       "superhero": "Superman",
       "publisher": "DC Comics",
@@ -73,14 +64,6 @@
       "alter_ego": "Dick Grayson",
       "first_appearance": "Detective Comics #38",
       "characters": "Dick Grayson"
-    },
-    {
-      "id": "dc-blue",
-      "superhero": "Blue Beetle",
-      "publisher": "DC Comics",
-      "alter_ego": "Dan Garret",
-      "first_appearance": "Mystery Men Comics #1",
-      "characters": "Dan Garret, Ted Kord, Jaime Reyes"
     },
     {
       "id": "dc-black",
@@ -161,14 +144,6 @@
       "alter_ego": "Scott Summers",
       "first_appearance": "X-Men #1",
       "characters": "Scott Summers"
-    },
-    {
-      "id": "marvel-silver",
-      "superhero": "Silver Surfer",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Norrin Radd",
-      "first_appearance": "The Fantastic Four #48",
-      "characters": "Norrin Radd"
     }
   ]
 }
