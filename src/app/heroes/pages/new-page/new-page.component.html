@@ -80,6 +80,7 @@
                         *ngIf="currentHero.id"
                         mat-raised-button
                         color="warn"
+                        (click)="onDeleteHero()"
                     >
                         <mat-icon>delete</mat-icon>
                         Delete
